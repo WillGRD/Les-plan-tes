@@ -1,0 +1,197 @@
+nav {
+    display: flex;
+    background-color: black;
+    max-width: 1920px;
+}
+
+header {
+    background-color: black;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: flex-end;
+
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin: auto;
+    max-width: 1200px;
+    align-items: center;
+}
+
+main article img{
+    max-width: 1920px;
+    margin-right: 50px;
+}
+
+header div img {
+    width: 55px;
+    height: 50px;
+}
+
+.Top {
+    width: 100%;
+}
+
+header nav a {
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: block;
+
+
+
+}
+
+.Article1{
+    margin-top: 20px;
+}
+
+article {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.Article2 {
+    flex-direction: row-reverse;
+}
+
+.Téllu {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #D6D5A8;
+}
+
+.Anti {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.Gaz {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #D6D5A8;
+}
+
+.Date {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.MID {
+    text-align: center;
+    position: relative;
+
+
+}
+
+.MID::before {
+    content: "";
+    max-width: 430px;
+    width: 100%;
+    height: 1px;
+    background-color: #1B2430;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 330px;
+
+
+}
+
+.MID::after {
+    content: "";
+    width: 25vw;
+    height: 1px;
+    background-color: #1B2430;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 290px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1B2430;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+footer ul {
+    display: block;
+    padding: 0;
+    text-align: center;
+
+
+
+
+
+}
+
+
+footer ul li {
+    color: #9F9F9F;
+    margin: 8px;
+
+}
+
+footer h3 {
+    color: white;
+    margin: 0;
+
+}
+
+.UwU {
+    display: flex;
+
+}
+
+footer p {
+    color: white;
+}
+
+.Titre {
+    text-align: center;
+    width: 200px;
+}
+
+.nicole {
+
+    position: relative;
+    margin: auto;
+}
+
+.nicole:before {
+    content: "";
+    background-color: white;
+    width: 1px;
+    height: 120px;
+    position: absolute;
+    right: 1px;
+    top: 30px;
+
+}
+
+footer h3{
+    margin-top: 20px;
+}
+
