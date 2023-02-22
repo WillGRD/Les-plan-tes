@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
+
 nav {
     display: flex;
-    background-color: black;
     max-width: 1920px;
     font-family: 'Montserrat';
 }
 
 header {
-    background-color: black;
+    background-color: #1B2430;
 }
 
 ul {
@@ -25,46 +25,48 @@ ul {
 
 }
 
-main article:first-of-type{
+main article:first-of-type {
     padding-top: 60px;
 }
 
-article{
+article {
     font-family: 'Roboto'
 }
 
 header div {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+  
     margin: auto;
     max-width: 1200px;
     align-items: center;
 }
 
-.Top{
+.Top {
     width: 100%;
     height: 315px;
     object-fit: cover;
 }
-.Article2 img{
+
+article:nth-of-type(2n) img {
     margin-left: 125px;
 }
 
-article p{
+article p {
     text-align: justify;
-} 
+}
 
-.Article1 img{
+article:nth-of-type(2n-1) img {
     margin-right: 125px;
 }
 
 main article img {
-    
+
     width: 300px;
     height: 280px;
 }
-span{
+
+span {
     margin-top: 18px;
     margin-bottom: 18px;
     display: inline-block;
@@ -81,8 +83,8 @@ header div img {
     width: 100%;
 }
 
-main{
-    background-color:#F6F6F6 ;
+main {
+    background-color: #F6F6F6;
 }
 
 header nav a {
@@ -94,7 +96,7 @@ header nav a {
     display: block;
 }
 
-.Article1 {
+article:nth-of-type(2n-1) {
     margin-top: 0;
 }
 
@@ -104,9 +106,10 @@ article {
     margin: auto;
     margin-bottom: 60px;
 
+
 }
 
-.Article2 {
+article:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
 
@@ -115,6 +118,7 @@ article {
     border-radius: 10px;
     background-color: #D6D5A8;
     margin-right: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Anti {
@@ -122,14 +126,16 @@ article {
     border-radius: 10px;
     background-color: black;
     color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
 .Gaz {
     padding: 12px 16px;
     border-radius: 10px;
-    background-color: #D6D5A8;
+    background-color: #816797;
     margin-right: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Date {
@@ -138,14 +144,17 @@ article {
     background-color: black;
     color: white;
     padding: 12px;
-    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .MID {
     text-align: center;
     position: relative;
     width: fit-content;
-    margin: auto;
+    margin: 30px auto;
+
+
 
 
 }
@@ -160,6 +169,7 @@ article {
     position: absolute;
     top: 50%;
     right: 105%;
+    color: #1B2430;
 
 
 }
@@ -182,15 +192,18 @@ footer {
     background-color: #1B2430;
     flex-direction: column;
     align-items: center;
+    font-family: "Montserrat";
+
+
 
 
 
 }
 
-.Article1:nth-of-type(5){
+.Article1:nth-of-type(5) {
     margin-top: 50px;
-    
-    
+
+
 }
 
 footer ul {
@@ -236,7 +249,7 @@ footer p {
     content: "";
     background-color: white;
     width: 1px;
-    height: 120px;
+    height: 130px;
     position: absolute;
     left: 238px;
     top: 30px;
@@ -255,10 +268,50 @@ footer h3 {
     margin-left: 10px;
 }
 
-@media screen and (max-width: 530px) {
+footer a {
+    color: #9F9F9F;
+    text-decoration: none;
+
+}
+
+#coucou::before {
+    content: "";
+    height: 1px;
+    width: 170%;
+    position: absolute;
+    top: -10px;
+    left: -30%;
+    background-color: white;
+
+
+}
+
+#coucou {
+    position: relative;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    header nav {
+        display: none;
+
+
+    }
+
+    article {
+        flex-direction: column !important;
+    }
+
     span {
-        display: block;
-        text-align: center;
-        margin: 5px 0;
+
+        margin: 5px;
+    }
+
+    footer .UwU {
+        flex-direction: column;
+    }
+
+    .nicole::before {
+        display: none;
     }
 }
