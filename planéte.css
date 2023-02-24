@@ -36,7 +36,7 @@ article {
 header div {
     display: flex;
     justify-content: space-between;
-  
+
     margin: auto;
     max-width: 1200px;
     align-items: center;
@@ -104,7 +104,7 @@ article {
     display: flex;
     max-width: 1200px;
     margin: auto;
-  padding-bottom: 60px;
+    padding-bottom: 60px;
 
 
 }
@@ -151,9 +151,9 @@ article:nth-of-type(2n) {
 .MID {
     text-align: center;
     position: relative;
-    width: fit-content;
+    width: 100%;
     margin: 30px auto;
-
+    max-width: 1200px;
 
 
 
@@ -161,14 +161,13 @@ article:nth-of-type(2n) {
 
 .MID::before {
     content: "";
-    max-width: 100%;
-    width: 100%;
+    width: 25%;
     height: 1px;
     background-color: #1B2430;
     display: block;
     position: absolute;
     top: 50%;
-    right: 105%;
+    right: 0;
     color: #1B2430;
 
 
@@ -176,13 +175,13 @@ article:nth-of-type(2n) {
 
 .MID::after {
     content: "";
-    width: 100%;
+    width: 25%;
     height: 1px;
     background-color: #040506;
     display: block;
     position: absolute;
     top: 50%;
-    left: 105%;
+    left: 0;
 }
 
 
@@ -193,6 +192,10 @@ footer {
     flex-direction: column;
     align-items: center;
     font-family: "Montserrat";
+    padding-top: 46px;
+
+
+
 
 
 
@@ -222,12 +225,13 @@ footer ul li {
 
 footer h3 {
     color: white;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .UwU {
     display: flex;
-    width: 800px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 footer p {
@@ -244,16 +248,8 @@ footer p {
 
     position: relative;
     margin: auto;
-}
-
-.nicole:before {
-    content: "";
-    background-color: white;
-    width: 1px;
-    height: 130px;
-    position: absolute;
-    left: 238px;
-    top: 30px;
+    width: 33.33%;
+    border-right: 1px solid white;
 }
 
 footer h3 {
@@ -266,7 +262,7 @@ footer h3 {
 
 
 #parte {
-    margin-left: 10px;
+    width: 33.33%;
 }
 
 footer a {
@@ -278,10 +274,9 @@ footer a {
 #coucou::before {
     content: "";
     height: 1px;
-    width: 170%;
+    width: 100%;
     position: absolute;
-    top: -10px;
-    left: -30%;
+    left: 0%;
     background-color: white;
 
 
@@ -290,12 +285,37 @@ footer a {
 #coucou {
     position: relative;
     margin-top: 20px;
+    width: 100%;
 }
 
+#coucou p:first-of-type{
+    margin-top: 10px;
+   }
+
 @media screen and (max-width: 800px) {
-    header nav {
+    header nav li {
         display: none;
 
+
+    }
+
+    header ul{
+        width: 30px;
+        height: 30px;
+        background: red;
+        justify-content: flex-end;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        position:relative    
+    }
+
+    header ul::before{
+        content:"";
+        position:absolute;
+        height: 2px;
+        background-color: white;
+        width: 100%;
+        top: 50%;
 
     }
 
@@ -315,4 +335,22 @@ footer a {
     .nicole::before {
         display: none;
     }
+
+    article{
+        align-items: center;
+    }
+
+    .nicole{
+        width: 100%;        
+    
+    }
+
+    #parte{
+        width: 100%;
+    }
+
+    article img{
+        margin: 0 !important;
+    }
+
 }
